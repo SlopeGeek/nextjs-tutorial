@@ -150,6 +150,12 @@ body
  white-space: normal;
 }
 
+.title:hover
+{
+  color: #000000;
+  text-decoration: none;
+}
+
 .toggle
 {
   position: fixed;
@@ -189,8 +195,6 @@ body
 {
   display: none;
 }
-
-
 
 a {
   color: #0070f3;
