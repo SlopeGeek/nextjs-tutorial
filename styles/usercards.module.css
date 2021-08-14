@@ -1,0 +1,72 @@
+.container
+{
+    position: relative;
+    /*元の幅
+    /*width: 1280px;*/
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(yellow,yellow 30%,
+    #7cc7e8 30%,#7cc8e8);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .cards:hover .content
+{
+    transform: translateY(0);
+}
+
+.imgBx
+{
+    transition: 0.5s;
+    z-index: 100000;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-origin: top;
+}
+
+.imgBx:hover
+{
+    transform: translateY(30px) scale(0.5);
+}
+
+.img
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+.content h2
+{
+    color: white;
+}
