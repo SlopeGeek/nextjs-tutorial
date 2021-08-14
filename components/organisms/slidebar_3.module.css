@@ -1,0 +1,99 @@
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    background: #1b1b1b;
+}
+
+.sidebar .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+
+.sidebar ul{
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li{
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);   
+}
+
+.sidebar ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+.sidebar ul li a:hover{
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+
+.sidebar ul ul.feat_show{
+    position: static;
+    display: none;
+}
+
+.sidebar ul ul.feat_show.show{
+    display: block;
+}
+
+.sidebar ul ul.serv_show{
+    position: static;
+    display: none;
+}
+
+.sidebar ul ul.serv_show.show{
+    display: block;
+}
+
+.sidebar ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+.sidebar ul ul li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+}
+
+.sidebar ul li a ion-icon{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+
+.sidebar ul li a ion-icon.feat_icon.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.sidebar ul li a ion-icon.serv_icon.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+
+
+
+
+
