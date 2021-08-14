@@ -1,0 +1,225 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    background: #11101d;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.sidebar.active{
+    width: 240px;
+}
+
+.menu{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    margin: 0 5px;
+}
+
+.menu ion-icon{
+    pointer-events: none;
+}
+
+.sidebar #btn{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 6px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: translateX(-50%);
+}
+
+.sidebar ul{
+    margin-top: 50px;
+}
+
+.sidebar ul li{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+}
+
+.sidebar ul span.submenu li{
+    position: relative;
+    line-height: 42px;
+    border-bottom: none;
+    display: none;
+}
+
+.sidebar ul span.submenu.show li{
+    display: block;
+}
+
+.sidebar ul span.submenu li a{
+    font-size: 17px;
+    padding-left: 80px;
+}
+
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 122px;
+    top: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+}
+
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip{
+    transition: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
+}
+
+.sidebar ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.sidebar ul li ion-icon.search{
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    transition: all 0.5 ease;
+}
+
+
+.sidebar ul li ion-icon.search:hover{
+    background: #fff;
+    color: #1d1b31;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background: #fff;
+}
+
+.sidebar ul li a ion-icon{
+    height: 30px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.sidebar .links_name{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .links_name{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar .links_name:hover{
+    width: 78px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.home_content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+    transition: all 0.5s ease;
+    background: aqua;
+    z-index: auto;
+  }
+
+  .content_dark{
+	position: fixed;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: block;
+  }
+
+.sidebar.active ~ .home_content{
+    position: fixed;
+    width: calc(100% - 240px);
+    height: 100%;
+	top: 0;
+	left: 240px;
+	background: rgba(3,3,3,.5);
+	display: block;
+}
+
+.sidebar.active ~ .content_dark{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(3,3,3,.5);
+	display: block;
+}
+
+.icon{
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+    display: none;
+}
+
+.icon.active{
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.icon.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
