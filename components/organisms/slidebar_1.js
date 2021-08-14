@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import {useEffect} from 'react'
+import { useEffect } from 'react'
+import Ionicons from '../ionicon'
+import styles from './slidebar_1.module.css'
 
 export default function Slidebar_1() {
     useEffect(() => {
@@ -15,13 +16,13 @@ export default function Slidebar_1() {
         }
     }, [])
 
-/*     const setToggle = () => {
-        let menuToggle = document.querySelector('.toggle');
-        let navigation = document.querySelector('.navigation');
-        menuToggle.classList.toggle('active')
-        navigation.classList.toggle('active')
-    }
- */
+    /*     const setToggle = () => {
+            let menuToggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+     */
     const openMenu = () => {
         let navigation = document.querySelector('.navigation');
         navigation.classList.toggle('active')
@@ -30,13 +31,78 @@ export default function Slidebar_1() {
 
     return (
         <body>
-            <Head>
-                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            </Head>
-            <div className="navigation">
+            <Ionicons></Ionicons>
+            {/* <div className={styles.navigation}>
                 <ul>
-                <li className="list">
+                    <li className="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#" onClick={openMenu}>
+                            <span className={styles.icon}><ion-icon name="menu-outline"></ion-icon></span>
+                            <span className={styles.title}>Menu</span>
+                        </a>
+                    </li>
+                    <li className="list active">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span className={styles.icon}><ion-icon name="home-outline"></ion-icon></span>
+                            <span className={styles.title}>Home</span>
+                        </a>
+                    </li>
+                    <li className="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span className={styles.icon}><ion-icon name="person-outline"></ion-icon></span>
+                            <span className={styles.title}>Profile</span>
+                        </a>
+                    </li>
+                    <li className="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span className={styles.icon}><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                            <span className={styles.title}>Messages</span>
+                        </a>
+                    </li>
+                    <li className="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span className={styles.icon}><ion-icon name="settings-outline"></ion-icon></span>
+                            <span className={styles.title}>Settings</span>
+                        </a>
+                    </li>
+                    <li className="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span className={styles.icon}><ion-icon name="help-outline"></ion-icon></span>
+                            <span className={styles.title}>Help</span>
+                        </a>
+                    </li>
+                    <li className="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span className={styles.icon}><ion-icon name="lock-closed-outline"></ion-icon></span>
+                            <span className={styles.title}>Password</span>
+                        </a>
+                    </li>
+                    <li className="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span className={styles.icon}><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span className={styles.title}>SignOut</span>
+                        </a>
+                    </li>
+                </ul>
+            </div> */}
+          <div className="navigation">
+                <ul>
+                    <li className="list">
                         <b></b>
                         <b></b>
                         <a href="#" onClick={openMenu}>
@@ -100,9 +166,17 @@ export default function Slidebar_1() {
                             <span className="title">SignOut</span>
                         </a>
                     </li>
+                    <li className="list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span className="icon"><ion-icon name="log-out-outline" class={styles.outline}></ion-icon></span>
+                            <span className="title">SignOut</span>
+                        </a>
+                    </li>
                 </ul>
-            </div>           
-{/*             <div onClick={setToggle} className="toggle">
+            </div>
+            {/*             <div onClick={setToggle} className="toggle">
                 <ion-icon name="menu-outline" class="open"></ion-icon>
                 <ion-icon name="close-outline" class="close"></ion-icon>
             </div>
