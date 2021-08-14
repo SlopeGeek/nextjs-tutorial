@@ -1,0 +1,10 @@
+.slider{
+    position:fixed;
+    width: calc(100% - 240px);
+    left: 240px;
+    margin:0 auto;
+}
+
+.slider img{
+    margin:0 auto;
+}
