@@ -4,6 +4,11 @@ import Date from '../components/date'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
+import { FEEDS } from "../lib/rss";
+import { useEffect, useState } from 'react'
+import Slidebar2 from '../components/organisms/slidebar_2'
+import HomeSlider from '../components/organisms/HomeSlider'
+
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -16,10 +21,12 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
+    /*
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <Slidebar2></Slidebar2>
       <section className={utilStyles.headingMd}>
         <p>日向坂46ファースト写真集</p>
         <p>
@@ -42,7 +49,35 @@ export default function Home({ allPostsData }) {
           </li>
           ))}
         </ul>
+        <p>
+        <Link href='https://www.hinatazaka46.com/'>
+          <a>日向坂46</a>
+        </Link>
+        </p>
+        <p>
+          <Link href='/article/hinata'>
+            <a>推しメンページ</a>
+          </Link>
+        </p>
+        <p>
+        <Link href='https://www.hinatazaka46.com/s/official/diary/member/list?ima=0000&ct=18'>
+          <a>松田好花</a>
+        </Link>
+        </p>
+        {FEEDS.map((feed) => (
+          <Link key={feed.slug} href={`/feeds/${feed.slug}`}>
+            <a className="p-4 border border-gray-200 hover:border-gray-500 rounded-lg">
+              {feed.title}
+              <br />
+            </a>
+          </Link>
+        ))}
       </section>
     </Layout>
+    */
+    <div>
+      <Slidebar2 />
+      <HomeSlider />
+    </div>
   )
 }
