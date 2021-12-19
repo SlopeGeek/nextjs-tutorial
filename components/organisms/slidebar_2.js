@@ -104,6 +104,13 @@ export default function Slidebar_2(props) {
                         </a>
                         <span className={styles.tooltip}>Test</span>
                     </li>
+                    <li>
+                        <a href="/article/costmanagement">
+                            <ion-icon name="create-outline"></ion-icon>
+                            <span className={styles.links_name}>Management</span>
+                        </a>
+                        <span className={styles.tooltip}>Management</span>
+                    </li>
                 </ul>
             </div>
             <div className={styles.content_dark}></div>

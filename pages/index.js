@@ -4,7 +4,6 @@ import Date from '../components/date'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
-import { FEEDS } from "../lib/rss";
 import { useEffect, useState } from 'react'
 import Slidebar2 from '../components/organisms/slidebar_2'
 import HomeSlider from '../components/organisms/HomeSlider'
