@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 
 export default function UserCards() {
-    const url = '../data.json'
+    const url = '/data.json'
     const [data, setData] = useState({ GroupName: '', Member: [] })
 
     fetch(url)
@@ -38,62 +38,6 @@ export default function UserCards() {
                     )
                 }
             </div>
-            {/*             <div className={styles.container}>
-                <div className={styles.cards}>
-                    <div className={styles.content}>
-                        <h2>
-                            河田陽菜
-                        <h6>
-                                生年月日 2001年7月23日
-                        </h6>
-                        </h2>
-                    </div>
-                    <div className={styles.imgBx}>
-                        <Image className={styles.img}
-                            src="/images/HinaKawata.jpg"
-                            height={400}
-                            width={300}
-                            priority={true}
-                        />
-                    </div>
-                </div>
-                <div className={styles.cards}>
-                    <div className={styles.content}>
-                        <h2>
-                            松田好花
-                        <h6>
-                                生年月日 1999年4月27日
-                        </h6>
-                        </h2>
-                    </div>
-                    <div className={styles.imgBx}>
-                        <Image className={styles.img}
-                            src="/images/KonokaMatsuda.jpg"
-                            height={400}
-                            width={300}
-                            priority={true}
-                        />
-                    </div>
-                </div>
-                <div className={styles.cards}>
-                    <div className={styles.content}>
-                        <h2>
-                            渡邊美穂
-                        <h6>
-                                生年月日 2000年2月24日
-                        </h6>
-                        </h2>
-                    </div>
-                    <div className={styles.imgBx}>
-                        <Image className={styles.img}
-                            src="/images/MihoWatanabe.jpg"
-                            height={400}
-                            width={300}
-                            priority={true}
-                        />
-                    </div>
-                </div>
-            </div>
- */}        </div>
+      </div>
     )
 }
