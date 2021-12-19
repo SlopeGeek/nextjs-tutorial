@@ -1,0 +1,8 @@
+{
+    "GroupName": "日向坂46",
+    "Member" :[
+        {"name":"河田陽菜","birthday":"生年月日 2001年7月23日","imagepath":"/images/HinaKawata.jpg"},
+        {"name":"松田好花","birthday":"生年月日 1999年4月27日","imagepath":"/images/KonokaMatsuda.jpg"},
+        {"name":"渡邊美穂","birthday":"生年月日 2000年2月24日","imagepath":"/images/MihoWatanabe.jpg"}
+    ]
+}

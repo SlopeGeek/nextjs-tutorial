@@ -1,0 +1,23 @@
+.button {
+    margin-left: 10px;
+}
+
+.table {
+    margin: 30px 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.style th {
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+.style td {
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+.test:hover {
+    background-color: aqua;
+}

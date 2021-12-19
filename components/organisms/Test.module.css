@@ -1,0 +1,29 @@
+.test
+{
+    color: aqua;
+}
+
+.test ul li
+{
+    color: blue;
+}
+
+.test ul li.sakura
+{
+    color: pink;
+}
+
+.test ul li .icon ion-icon
+{
+    font-size: 2em;
+}
+
+.icon
+{
+    color: brown;
+}
+
+.test ul li:hover
+{
+    color: red;
+}
